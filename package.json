@@ -1,0 +1,31 @@
+{
+  "name": "heensrestaurant",
+  "version": "1.0.0",
+  "description": "Heens Restaurant Site",
+  "main": "index.html",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "echo \"Update start for develop\"",
+    "deploy": "gh-pages -d public"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ayrbox/heensrestaurant.git"
+  },
+  "keywords": [
+    "heens",
+    "restaurant",
+    "js",
+    "html",
+    "css"
+  ],
+  "author": "Thang",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/ayrbox/heensrestaurant/issues"
+  },
+  "homepage": "https://github.com/ayrbox/heensrestaurant#readme",
+  "devDependencies": {
+    "gh-pages": "^2.0.1"
+  }
+}
