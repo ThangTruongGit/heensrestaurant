@@ -5,7 +5,7 @@
   "main": "index.html",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "live-server ./public",
+    "start": "gatsby develop",
     "deploy": "echo \"heensrestaurant.uk\" > ./public/CNAME && gh-pages -d public"
   },
   "repository": {
@@ -26,7 +26,13 @@
   },
   "homepage": "https://github.com/ayrbox/heensrestaurant#readme",
   "devDependencies": {
-    "gh-pages": "^2.0.1",
-    "live-server": "^1.2.1"
+    "bootstrap": "^4.2.1"
+  },
+  "dependencies": {
+    "gatsby": "^2.0.78",
+    "prop-types": "^15.6.2",
+    "react": "^16.7.0",
+    "react-dom": "^16.7.0",
+    "react-helmet": "^5.2.0"
   }
 }
