@@ -6,6 +6,7 @@ import {
   NavbarBrand,
   Nav,
   NavItem,
+  NavLink,
   Container,
 } from 'reactstrap';
 import { Link } from 'gatsby';
@@ -22,13 +23,13 @@ const Header = (props) => {
             <Collapse isOpen={isOpen} navbar>
             <Nav className="ml-auto" navbar>
                 <NavItem>
-                <Link href="/">Home</Link>
+                    <NavLink to="/" tag={Link}>Home</NavLink>
                 </NavItem>
                 <NavItem>
-                <Link href="/menu">Menu</Link>
+                    <NavLink to="/menu" tag={Link}>Menu</NavLink>
                 </NavItem>
                 <NavItem>
-                <Link href="/contact">Contact</Link>
+                    <NavLink to="/contact" tag={Link}>Contact</NavLink>
                 </NavItem>
             </Nav>
             </Collapse>
