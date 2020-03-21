@@ -22,6 +22,8 @@
                         <a href='index.html'>
                             <h1>Heen's Restaurant</h1>
                         </a>
+                        <h4 class="text-danger">Due to government announcement, we are unable to offer dine in or table service. However, we will continue to provide delivery or take out services</h4>
+
                     </div>
                 </div>
                 <div class="navbar-collapse collapse">
@@ -100,7 +102,7 @@
                         <h2 class="panel-title">Find Us</h2>
                     </div>
                     <div class="panel-body">
-                        <div id="googleMap" style="width:500px;height:475px;" class="img-rounded img-responsive"></div>
+                        <div id="gMap" style="width:500px;height:475px;" class="img-rounded img-responsive"></div>
                     </div>
 
                 </div>
@@ -118,8 +120,32 @@
     <script src="js/jquery-2.0.3.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
     <script src="js/site.js"></script>
-    <script src="http://maps.googleapis.com/maps/api/js"></script>
-    <script src="js/googlemap.js"></script>
+    <script>
+        function GetMap() {
+            var map = new Microsoft.Maps.Map('#gMap',
+                {
+                    credentials: 'AjgEVboI0EmxD4i9b0nX9wf2nIemaRXmmy_LDudwE9UrwDS9RIhfLfOuNGX4hfZn',
+                    center: new Microsoft.Maps.Location(51.358680, -0.1919500),
+                    zoom: 17,
+                    showMapTypeSelector: true
+                });
+
+            var center = map.getCenter();
+            var pin = new Microsoft.Maps.Pushpin(center, {
+                icon: 'images/poi_custom.jpeg',
+                anchor: new Microsoft.Maps.Point(8, 88),
+                text: ''
+            });
+
+
+            //Add the pushpin to the map
+            map.entities.push(pin);
+        }
+
+
+    </script>
+
+    <script type='text/javascript' src='http://www.bing.com/api/maps/mapcontrol?callback=GetMap' async defer></script>
 </body>
 
 </html>
