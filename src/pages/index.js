@@ -3,6 +3,7 @@ import { Container, Row, Col } from "reactstrap";
 
 import Layout from "../components/layout";
 import Carousel from "../components/carousel";
+import Map from "../components/Map";
 
 const IndexPage = () => {
   return (
@@ -36,6 +37,7 @@ const IndexPage = () => {
           </Col>
         </Row>
       </Container>
+      <Map />
     </Layout>
   );
 };
