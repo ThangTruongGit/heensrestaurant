@@ -1,0 +1,23 @@
+$footer-bg: #8e1821;
+
+.map-container {
+  @extend .w-100;
+  height: 600px;
+}
+
+.footer {
+  background-color: $footer-bg;
+  color: #fff;
+
+  @extend .pt-5;
+
+  display: flex;
+  flex-direction: column;
+
+  &-copyright {
+    background-color: darken($footer-bg, 20%);
+    @extend .pt-4;
+    @extend .pb-4;
+    @extend .mt-5;
+  }
+}
