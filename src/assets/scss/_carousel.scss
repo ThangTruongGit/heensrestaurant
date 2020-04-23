@@ -1,5 +1,8 @@
-.slider-item {
+.main-banner-item {
   @extend .w-100;
-  height: 40vh;
-  max-height: 600px;
+  @extend .carousel-item;
+  height: 60vh;
+  background: #434343;
+  background-repeat: no-repeat;
+  background-size: cover;
 }

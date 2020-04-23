@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, Children } from "react";
 import {
   Carousel,
   CarouselItem,
@@ -6,76 +6,84 @@ import {
   CarouselIndicators,
   CarouselCaption
 } from "reactstrap";
-import img1 from "../images/Heens1.jpg";
-import img2 from "../images/Heens2.jpg";
-import img3 from "../images/Heens3.jpg";
-import img4 from "../images/Heens4.jpg";
-import img5 from "../images/Heens5.jpg";
-import img6 from "../images/Heens6.jpg";
+import img1 from "../assets/images/Heens1.jpg";
+import img2 from "../assets/images/Heens2.jpg";
+import img3 from "../assets/images/Heens3.jpg";
+import img4 from "../assets/images/Heens4.jpg";
+import img5 from "../assets/images/Heens5.jpg";
+import img6 from "../assets/images/Heens6.jpg";
+import img7 from "../assets/images/heens7.png";
 
 const items = [
   {
     src: img1,
-    altText: "Slide 1",
-    caption: "Slide 1"
+    altText: "Heens Restaurant",
+    caption: ""
   },
   {
     src: img2,
-    altText: "Slide 1",
-    caption: "Slide 1"
+    altText: "Heens Restaurant",
+    caption: ""
   },
   {
     src: img3,
-    altText: "Slide 1",
-    caption: "Slide 1"
+    altText: "Heens Restaurant",
+    caption: ""
   },
   {
     src: img4,
-    altText: "Slide 1",
-    caption: "Slide 1"
+    altText: "Heens Restaurant",
+    caption: ""
   },
   {
     src: img5,
-    altText: "Slide 1",
-    caption: "Slide 1"
+    altText: "Heens Restaurant",
+    caption: ""
   },
   {
     src: img6,
-    altText: "Slide 1",
-    caption: "Slide 1"
+    altText: "Heens Restaurant",
+    caption: ""
+  },
+  {
+    src: img7,
+    altText: "Heens Restaurant",
+    caption: ""
   }
 ];
 
-const CarouselWrapper = props => {
+const CustomSliderItem = imgSrc => ({ children, ...props }) => {
+  return (
+    <div {...props} style={{ backgroundImage: `url(${imgSrc})` }}>
+      {children}
+    </div>
+  );
+};
+
+const CarouselWrapper = () => {
   const [activeIndex, setActiveIndex] = useState(0);
-  const [animating, setAnimating] = useState(false);
 
   const next = () => {
-    if (animating) return;
     const nextIndex = activeIndex === items.length - 1 ? 0 : activeIndex + 1;
     setActiveIndex(nextIndex);
   };
 
   const previous = () => {
-    if (animating) return;
     const nextIndex = activeIndex === 0 ? items.length - 1 : activeIndex - 1;
     setActiveIndex(nextIndex);
   };
 
   const goToIndex = newIndex => {
-    if (animating) return;
     setActiveIndex(newIndex);
   };
 
   const slides = items.map(item => {
     return (
       <CarouselItem
-        onExiting={() => setAnimating(true)}
-        onExited={() => setAnimating(false)}
         key={item.src}
-        className="slider-item"
+        className="main-banner-item"
+        tag={CustomSliderItem(item.src)}
       >
-        <img src={item.src} alt={item.altText} className="w-100" />
         <CarouselCaption
           captionText={item.caption}
           captionHeader={item.caption}
