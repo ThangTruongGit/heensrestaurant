@@ -17,7 +17,7 @@ const CarouselWrapper = () => {
 
   const imagesData = useStaticQuery(graphql`
     query {
-      allFile {
+      allFile(filter: { sourceInstanceName: { eq: "banners" } }) {
         nodes {
           id
           childImageSharp {

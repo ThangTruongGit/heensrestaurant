@@ -16,6 +16,13 @@ module.exports = {
     {
       resolve: `gatsby-source-filesystem`,
       options: {
+        name: `events`,
+        path: path.join(__dirname, `src`, `assets`, `images`, `events`)
+      }
+    },
+    {
+      resolve: `gatsby-source-filesystem`,
+      options: {
         name: `banners`,
         path: path.join(__dirname, `src`, `assets`, `images`, `banners`)
       }
@@ -28,6 +35,14 @@ module.exports = {
         defaultQuality: 75
       }
     },
-    `gatsby-transformer-sharp`
+    `gatsby-transformer-sharp`,
+    `gatsby-transformer-yaml`,
+    {
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        name: "menu",
+        path: path.join(__dirname, `src`, `data`)
+      }
+    }
   ]
 };

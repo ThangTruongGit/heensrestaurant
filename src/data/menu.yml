@@ -1,0 +1,96 @@
+- name: Appetisers
+  description: "pladerholder"
+  items:
+    - name: Seafood Hors d'oeuvres
+      note: For 2 Persons or More
+      price: 18.8
+    - name: Mixed Hors D'oeuvres
+      note: For 2 Persons or More
+      price: 15.8
+    - name: Crispy Seaweed
+      price: 4.9
+    - name: Mini Spring Rolls
+      note: Vegetarian Available
+      price: 4.9
+    - name: Sesame Prawn on Toast
+      price: 5.5
+    - name: Wor Tip Pan Fried Pork Dumplings
+      note: 4 Pieces
+      price: 5.5
+    - name: Dry Shredded Smoked Chicken
+      description: in Salted Chilli & Garlic
+      price: 8
+      spicy: 3
+    - name: Lettuce Wrap Chopped Chicken
+      price: 6
+    - name: Crispy Sweet & Sour Fried Won Tun with Prawn Filling
+      price: 6
+    - name: Satay Lamb with Peanut Sauce on Skewers
+      note: 4 Pieces
+      price: 6
+    - name: Satay Chicken with Peanut Sauce on Skewers
+      note: 4 Pieces
+      price: 6
+    - name: Satay Prawn with Peanut Sauce on Skewers
+      note: 6 Prawns
+      price: 7.5
+    - name: BBQ Capital Ribs in Tangy Sauce
+      price: 6
+    - name: Peppercorn Salted Chilli & Garlic Spare Ribs
+      note: Dry
+      price: 6
+    - name: Dry Roasted Spare Ribs
+      price: 6
+    - name: Peppercorn Salted King Prawns in Chilli & Garlic
+      note: Dry
+      price: 8.5
+    - name: Spicy Capital King Prawns
+      note: Lightly battered in tangy capital sauce with Chillies
+      price: 8.5
+    - name: King Prawns in Batter with Sweet & Sour Sauce
+      price: 8.5
+    - name: Butterfly King Prawns in Bread Crumbs
+      note: 4 Pieces
+      price: 5.5
+    - name: Crab Claws
+      note: 2 Pieces
+      price: 6
+    - name: Whole Soft Shell Crab Salted Chilli & Garlic
+      note: Dry
+      price: 20
+    - name: Scallops Fried in Batter with Sweet & Sour Sauce
+      price: 8.5
+    - name: Steamed Scallops in Shells
+      note: 3 Pieces
+      price: 2
+    - name: Mussels in Black Bean Sauce
+      price: 7
+    - name: Mussels in Green Thai Curry Sauce
+      price: 7
+    - name: Aromatic Mongolian Lamb Lettuce Wrap
+      note: with Plum Sauce
+      price: 8.5
+    - name: Szechuan Style Spicy Aromatic Lamb Lettuce Wrap
+      price: 10
+- name: Crispy Aromatic Duck
+  items:
+    - name: Quarter Duck
+      price: 10.80
+    - name: Half Duck
+      price: 19.80
+    - name: Whole Duck
+      price: 36.80
+
+- name: Fresh Whole Lobster
+  description: Traditionally prepared in the shell, with a choice tasty sauce in a bed of noodles
+  items:
+    - name: Deep Fried in Peppercorn salted with Chilli and Garlic
+      description: No Sauce
+      image: images/m.jpg
+      price: -1
+    - name: Black Bean Sauce
+      price: -1
+    - name: Ginger & Spring Onions Sauce
+      price: -1
+    - name: Spicy Chilli & Garlic Sauce
+      price: -1

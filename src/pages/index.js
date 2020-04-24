@@ -4,6 +4,7 @@ import { Container, Row, Col } from "reactstrap";
 import Layout from "../components/layout";
 import Carousel from "../components/carousel";
 import Map from "../components/Map";
+import MenuList from "../components/MenuList";
 
 const IndexPage = () => {
   return (
@@ -34,6 +35,11 @@ const IndexPage = () => {
             <p className="lead">
               With sufficient space to host an event of up to 70 people
             </p>
+          </Col>
+        </Row>
+        <Row>
+          <Col>
+            <MenuList />
           </Col>
         </Row>
       </Container>
