@@ -1,21 +1,20 @@
 - name: Appetisers
-  description: "pladerholder"
   items:
     - name: Seafood Hors d'oeuvres
-      note: For 2 Persons or More
+      description: For 2 Persons or More
       price: 18.8
     - name: Mixed Hors D'oeuvres
-      note: For 2 Persons or More
+      description: For 2 Persons or More
       price: 15.8
     - name: Crispy Seaweed
       price: 4.9
     - name: Mini Spring Rolls
-      note: Vegetarian Available
+      description: Vegetarian Available
       price: 4.9
     - name: Sesame Prawn on Toast
       price: 5.5
     - name: Wor Tip Pan Fried Pork Dumplings
-      note: 4 Pieces
+      description: 4 Pieces
       price: 5.5
     - name: Dry Shredded Smoked Chicken
       description: in Salted Chilli & Garlic
@@ -26,49 +25,49 @@
     - name: Crispy Sweet & Sour Fried Won Tun with Prawn Filling
       price: 6
     - name: Satay Lamb with Peanut Sauce on Skewers
-      note: 4 Pieces
+      description: 4 Pieces
       price: 6
     - name: Satay Chicken with Peanut Sauce on Skewers
-      note: 4 Pieces
+      description: 4 Pieces
       price: 6
     - name: Satay Prawn with Peanut Sauce on Skewers
-      note: 6 Prawns
+      description: 6 Prawns
       price: 7.5
     - name: BBQ Capital Ribs in Tangy Sauce
       price: 6
     - name: Peppercorn Salted Chilli & Garlic Spare Ribs
-      note: Dry
+      description: Dry
       price: 6
     - name: Dry Roasted Spare Ribs
       price: 6
     - name: Peppercorn Salted King Prawns in Chilli & Garlic
-      note: Dry
+      description: Dry
       price: 8.5
     - name: Spicy Capital King Prawns
-      note: Lightly battered in tangy capital sauce with Chillies
+      description: Lightly battered in tangy capital sauce with Chillies
       price: 8.5
     - name: King Prawns in Batter with Sweet & Sour Sauce
       price: 8.5
     - name: Butterfly King Prawns in Bread Crumbs
-      note: 4 Pieces
+      description: 4 Pieces
       price: 5.5
     - name: Crab Claws
-      note: 2 Pieces
+      description: 2 Pieces
       price: 6
     - name: Whole Soft Shell Crab Salted Chilli & Garlic
-      note: Dry
+      description: Dry
       price: 20
     - name: Scallops Fried in Batter with Sweet & Sour Sauce
       price: 8.5
     - name: Steamed Scallops in Shells
-      note: 3 Pieces
+      description: 3 Pieces
       price: 2
     - name: Mussels in Black Bean Sauce
       price: 7
     - name: Mussels in Green Thai Curry Sauce
       price: 7
     - name: Aromatic Mongolian Lamb Lettuce Wrap
-      note: with Plum Sauce
+      description: with Plum Sauce
       price: 8.5
     - name: Szechuan Style Spicy Aromatic Lamb Lettuce Wrap
       price: 10
@@ -136,15 +135,15 @@
       price: 9.8
 
     - name: Peking Style Fish
-      note: Pan Fried Lightly with Egg in Light Garlic Sauce
+      description: Pan Fried Lightly with Egg in Light Garlic Sauce
       price: 9.8
 
     - name: Kung Po Fish Fillets
-      note: Lighty battered with Sweet and Spicy
+      description: Lighty battered with Sweet and Spicy
       price: 9.8
 
     - name: Peppercorn Salted Fried Squid in Chilli and Garlic
-      note: Dry
+      description: Dry
       price: 9.8
 
     - name: Spicy Capital Squid, Lightly Battered in Spicy Capital Sauce
@@ -157,27 +156,27 @@
       price: 9.8
 
     - name: King Prawns with Chilli & Basil
-      note: with Green Peppers & Chillies
+      description: with Green Peppers & Chillies
       price: 9.8
 
     - name: King Prawns with Cashew Nuts in Ho Sin Sauce
       price: 10.8
 
     - name: Szechuan Style King Prawns
-      note: with Onions & Green Pepper & Chillies
+      description: with Onions & Green Pepper & Chillies
       price: 9.8
 
     - name: King Prawns with Scallop & Asparagus
       price: 9.8
 
     - name: Scallops Stir Fried with Fresh Broccoli
-      note: in Light Garlic Sauce
+      description: in Light Garlic Sauce
       price: 9.8
 
 - name: Sizzling Dishes
   items:
     - name: Sizzling Steak Fillet Cantonese style
-      note: with Onions in Capital Fruity Sauce
+      description: with Onions in Capital Fruity Sauce
       price: 14.50
     - name: Sizzling Steak Fillet in Black Pepper Sauce
       price: 14.50
@@ -186,7 +185,7 @@
     - name: Sizzling Satay Chicken in Spicy Peanut Sauce
       price: 10.50
     - name: Sizzling Pork Fillet Cantonese Style
-      note: with Onions in Capital Fruity Sauce
+      description: with Onions in Capital Fruity Sauce
       price: 10.50
     - name: Sizzling Lamb in Honey & Black Pepper Sauce
       price: 10.50
@@ -197,7 +196,7 @@
     - name: Sizzling King Prawns in Chilli & Black Bean Sauce
       price: 11.50
     - name: Sizzling King Prawns Cantonese style
-      note: in Capital Fruity Sauce
+      description: in Capital Fruity Sauce
       price: 11.50
     - name: Sizzling Mixed Seafood in Seaspice Chilli Sauce
       price: 11.50
@@ -218,36 +217,36 @@
     - name: Chicken with Cashew Nuts in Hoi Sin Sauce
       price: 8.8
     - name: Lemon Chicken
-      note: Fried in Light Batter with Lemon Sauce
+      description: Fried in Light Batter with Lemon Sauce
       price: 8.0
     - name: Sweet & Sour Chicken
-      note: Hong Kong Style, in Sauce
+      description: Hong Kong Style, in Sauce
       price: 8.0
     - name: Fried Chicken with Crispy Onions
-      note: With Capital BBQ Sauce
+      description: With Capital BBQ Sauce
       price: 8.0
     - name: Kung Po chicken
-      note: In Spicy Sweet & Sour Sauce with Water Chestnuts
+      description: In Spicy Sweet & Sour Sauce with Water Chestnuts
       price: 8.0
     - name: Chicken with Ginger & spring Onions
       price: 8.0
     - name: Chicken in Black Bean Sauce
-      note: with Green Peppers and Onions
+      description: with Green Peppers and Onions
       price: 8.0
     - name: Szechuan Chicken
-      note: Spicy Szechuan Sauce, Onions & Green Peppers
+      description: Spicy Szechuan Sauce, Onions & Green Peppers
       price: 8.0
 - name: Meat Dishes
   items:
     - name: Sweet & Sour Pork
-      note: Hong Kong Style
+      description: Hong Kong Style
       price: 8.0
     - name: Char-Sui Chinese BBQ Roasted Pork
       price: 8.0
     - name: Pork Fillets with Honey & Black Pepper Sauce
       price: 8.0
     - name: Peppercorn Salted Pork Fillets with Chilli and Garlic
-      note: Dry
+      description: Dry
       price: 8.0
     - name: Crispy Shredded Chilli Beef
       price: 8.0
@@ -256,15 +255,15 @@
     - name: Beef in Black Bean Sauce
       price: 8.0
     - name: Szechuan Style Beef
-      note: Spicy with Onions & Green Peppers
+      description: Spicy with Onions & Green Peppers
       price: 8.0
     - name: Ma Po Tofu
-      note: Soft Tofu cubes & Minced Beef with strong preserved vegetables in Chilli Sauce
+      description: Soft Tofu cubes & Minced Beef with strong preserved vegetables in Chilli Sauce
       price: 8.0
     - name: Lamb Slices in Sweet Chilli & Basil
       price: 9.5
     - name: Szechuan Style Lamb Slices
-      note: Spicy with Onions & Green Peppers
+      description: Spicy with Onions & Green Peppers
       price: 9.5
 - name: Thai Hot Curry & Chinese Curries
   items:
@@ -305,21 +304,21 @@
     - name: Vegetarian Chow Mein
       price: 6.0
     - name: Special Mixed Fried Udon
-      note: Thick Japanese style Noodle
+      description: Thick Japanese style Noodle
       price: 9.0
     - name: King Prawns Chow Mein
       price: 9.0
     - name: Singapore Style Spicy Vermicelli
-      note: Rice Noodles, Vegetarian Available
+      description: Rice Noodles, Vegetarian Available
       price: 7.0
 
 - name: Crispy Noodles
   items:
     - name: Seafood Crispy Noodle
-      note: King Prawns, Squid & Scallops
+      description: King Prawns, Squid & Scallops
       price: 10.8
     - name: Heen's Crispy House Fried Noodle
-      note: Mixed topping of Prawns and Meat
+      description: Mixed topping of Prawns and Meat
       price: 9.8
     - name: Vegetarian Crispy Noodle with Tofu and Vegetables
       price: 9.8
@@ -329,12 +328,12 @@
     - name: Special Fried Rice
       price: 4.2
     - name: Singapore Spicy Fried Rice
-      note: Vegetarian Available
+      description: Vegetarian Available
       price: 4.2
     - name: Shredded Chicken & Spring Onions Fried Rice
       price: 4.2
     - name: Vegetarian Fried Rice
-      note: with chopped Vegetables, no egg
+      description: with chopped Vegetables, no egg
       price: 4.0
     - name: Egg Fried Rice with Spring Onions
       price: 3.8
@@ -344,25 +343,25 @@
 - name: Vegetarian Appetisers
   items:
     - name: Vegetarian Crispy Aromatic Duck with Pancakes
-      note: Served with Plum Sauce, Spring Onions & Cucumber
+      description: Served with Plum Sauce, Spring Onions & Cucumber
       price: 9.8
     - name: Mixed Vegetarian Hor's d'oeurves for Two
-      note: For two persons or more
+      description: For two persons or more
       price: 14.8
     - name: Vegetarian Style Sesame Toast
       price: 5.5
     - name: Crispy Seaweed
       price: 4.9
     - name: Vegetarian Mini Spring Rolls
-      note: 4 Pieces
+      description: 4 Pieces
       price: 5.5
     - name: Vegetarian Crispy Won Tun
-      note: Pastry Filled with Vegetables with Sweet & Sour Sauce
+      description: Pastry Filled with Vegetables with Sweet & Sour Sauce
       price: 6.0
     - name: Satay Tofu on Skewers in Satay Peanut Sauce
       price: 6.0
     - name: Peppercorn Salted Fried Tofu with Salted Chilli & Garlic
-      note: Dry
+      description: Dry
       price: 6.0
     - name: Vegetarian Lettuce Wrap
       price: 6.0
@@ -370,15 +369,15 @@
 - name: Vegetarian & Vegetables
   items:
     - name: Kung Po Tofu Vegetarian Style
-      note: Spicy Sweet & Sour with Water Chestnuts
+      description: Spicy Sweet & Sour with Water Chestnuts
       price: 7.0
     - name: New Style Vegetarian Crispy Shredded Chilli 'Beef'
       price: 7.0
     - name: Sweet & Sour Fried Tofu
-      note: with Pineapple, green Peppers and Onions
+      description: with Pineapple, green Peppers and Onions
       price: 7.0
     - name: Monks Vegetable
-      note: with Chinese Vegetable and Tofu in Oyster Sauce
+      description: with Chinese Vegetable and Tofu in Oyster Sauce
       price: 7.0
     - name: Mixed Chinese Vegetable Curry
       price: 7.0
@@ -387,10 +386,10 @@
     - name: Stir Fried Asparagus with Straw Mushroom & Baby Corn
       price: 7.0
     - name: Peppercorn Salted Vegetables in Chilli & Garlic
-      note: Dry in light Batter
+      description: Dry in light Batter
       price: 7.0
     - name: Mixed Chinese Vegetables
-      note: Baby Corn, Chinese Leaf, Straw Mushrooms..
+      description: Baby Corn, Chinese Leaf, Straw Mushrooms..
       price: 7.0
     - name: Chinese "Pak Choi" in Oyster Sauce
       price: 7.0
@@ -399,7 +398,7 @@
     - name: Stir Fried "Pak Choi" with Broccoli in Garlic Sauce
       price: 7.0
     - name: Peppercorn Salted French Beans with Chilli & Garlic
-      note: Dry in light Batter
+      description: Dry in light Batter
       price: 7.0
     - name: Stir Fried French Beans in Garlic Sauce
       price: 7.0
@@ -417,10 +416,10 @@
     - name: Sizzling Fried Tofu in Peanut Satay Sauce
       price: 9.5
     - name: Sizzling Seaspice Fried Tofu
-      note: Spicy, with Black Seaweed & Water Chestnuts
+      description: Spicy, with Black Seaweed & Water Chestnuts
       price: 9.5
     - name: Sizzling Seaspice Spicy Aubergine
-      note: Spicy, with Black Seaweed & Water Chestnuts
+      description: Spicy, with Black Seaweed & Water Chestnuts
       price: 9.9
     - name: Sizzling Aubergine in Chilli & Black Bean Sauce
       price: 9.9

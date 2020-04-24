@@ -1,0 +1,38 @@
+$light-color: #cecece;
+.menu-cateogry {
+  @extend .mb-5;
+  & h1 {
+    font-family: Lobster;
+    border-bottom: 2px solid $light-color;
+    @extend .pb-3;
+    @extend .mb-3;
+
+    & > small {
+      font-family: Montserrat, Arial, Helvetica, sans-serif;
+      color: $light-color;
+      font-size: 0.6em;
+    }
+  }
+
+  ul.menu-items {
+    padding-left: 0;
+    list-style: none;
+    @extend .list-group;
+    @extend .list-group-flush;
+
+    & li {
+      @extend .list-group-item;
+
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+
+      .menu-item-name {
+        & > small {
+          color: $light-color;
+          font-style: italic;
+        }
+      }
+    }
+  }
+}

@@ -9,10 +9,10 @@ const MenuList = () => {
           node {
             id
             name
+            description
             items {
               name
               description
-              note
               price
               spicy
             }
@@ -23,16 +23,33 @@ const MenuList = () => {
   `);
   return menuData.menu.edges.map(({ node }) => {
     const { id, name, description, items } = node;
-
     return (
       <div className="menu-cateogry" key={id}>
         <h1>
           {name}
-          {description && <small>{description}</small>}
+          {description && (
+            <>
+              <br />
+              <small>{description}</small>
+            </>
+          )}
         </h1>
-        <ul>
-          {items.map(({ name, description, note, price, spicy }) => (
-            <li>{`${name} ${price}`}</li>
+        <ul className="menu-items">
+          {items.map(({ name, description, price, spicy }) => (
+            <li>
+              <span className="menu-item-name">
+                {name}
+                {description && (
+                  <>
+                    <br />
+                    <small>({description})</small>
+                  </>
+                )}
+              </span>
+              <span>
+                {price > 0 ? `£${price.toFixed(2)}` : "Seasonal Price"}
+              </span>
+            </li>
           ))}
         </ul>
       </div>
