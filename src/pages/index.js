@@ -31,10 +31,12 @@ const IndexPage = () => {
 
         <Row>
           <Col>
-            <h1>Speical Events</h1>
-            <p className="lead">
-              With sufficient space to host an event of up to 70 people
-            </p>
+            <div className="pt-5 pb-5">
+              <h1>Speical Events</h1>
+              <p className="lead">
+                With sufficient space to host an event of up to 70 people
+              </p>
+            </div>
           </Col>
         </Row>
         <Row>

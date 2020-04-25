@@ -1,42 +1,59 @@
-import React, { useState } from 'react';
+import React, { useEffect, useState } from "react";
 import {
   Collapse,
   Navbar,
-  NavbarToggler,
   NavbarBrand,
   Nav,
   NavItem,
   NavLink,
-  Container,
-} from 'reactstrap';
-import { Link } from 'gatsby';
+  Container
+} from "reactstrap";
+import { Link } from "gatsby";
+import clsx from "clsx";
 
-const Header = (props) => {
-    const [isOpen, setIsOpen] = useState(false);
-    const toggle = () => setIsOpen(!isOpen);
+const Header = () => {
+  const [isSticky, setSticky] = useState(false);
+
+  const handleScroll = () => {
+    const y = window.scrollY;
+    setSticky(y > 100);
+  };
+
+  useEffect(() => {
+    window.addEventListener("scroll", handleScroll);
+    return () => {
+      window.removeEventListener("scroll", () => handleScroll);
+    };
+  }, []);
+
   return (
-    <div>
-      <Navbar color="light" light expand="md">
-          <Container>
-            <NavbarBrand>Heen's Restaurant</NavbarBrand>
-            <NavbarToggler onClick={toggle} />
-            <Collapse isOpen={isOpen} navbar>
+    <div
+      className={clsx({
+        "header-wrapper": true,
+        "header-wrapper-sticky": isSticky
+      })}
+    >
+      <Navbar expand="md">
+        <Container>
+          <NavbarBrand>Heen's Restaurant</NavbarBrand>
+          <Collapse navbar>
             <Nav className="ml-auto" navbar>
-                <NavItem>
-                    <NavLink to="/" tag={Link}>Home</NavLink>
-                </NavItem>
-                <NavItem>
-                    <NavLink to="/menu" tag={Link}>Menu</NavLink>
-                </NavItem>
-                <NavItem>
-                    <NavLink to="/contact" tag={Link}>Contact</NavLink>
-                </NavItem>
+              <NavItem>
+                <NavLink to="/menu" tag={Link}>
+                  Menu
+                </NavLink>
+              </NavItem>
+              <NavItem>
+                <NavLink to="/contact" tag={Link}>
+                  Contact
+                </NavLink>
+              </NavItem>
             </Nav>
-            </Collapse>
-          </Container>
+          </Collapse>
+        </Container>
       </Navbar>
     </div>
   );
-}
+};
 
 export default Header;

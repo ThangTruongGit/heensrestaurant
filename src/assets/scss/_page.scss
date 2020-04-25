@@ -1,4 +1,40 @@
+$header-color: #8e1821;
+
 .content-wrapper {
   @extend .pt-5;
   @extend .pb-5;
+}
+
+.header-wrapper {
+  position: fixed;
+  left: 0;
+  right: 0;
+  z-index: 100;
+  background-color: rgba(0, 0, 0, 0.5);
+  transition: all ease-in 0.3s;
+
+  &.header-wrapper-sticky {
+    border-width: 10px;
+    background-color: $header-color;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.3);
+  }
+}
+
+.navbar-brand,
+.nav-link {
+  .header-wrapper & {
+    color: #fff;
+  }
+}
+
+.navbar-brand {
+  .header-wrapper & {
+    padding: 40px 0;
+    transition: all ease-in-out 0.3s 0.15s;
+  }
+
+  .header-wrapper-sticky & {
+    padding: 20px 0;
+    font-size: 1.8rem;
+  }
 }
