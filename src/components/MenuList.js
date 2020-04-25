@@ -24,7 +24,7 @@ const MenuList = () => {
   return menuData.menu.edges.map(({ node }) => {
     const { id, name, description, items } = node;
     return (
-      <div className="menu-cateogry" key={id}>
+      <div className="menu-cateogry" key={id} id="menu">
         <h1>
           {name}
           {description && (

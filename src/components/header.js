@@ -26,6 +26,13 @@ const Header = () => {
     };
   }, []);
 
+  const handleScrollTo = el => e => {
+    e.preventDefault();
+    document.querySelector(`#${el}`).scrollIntoView({
+      behavior: "smooth"
+    });
+  };
+
   return (
     <div
       className={clsx({
@@ -39,12 +46,16 @@ const Header = () => {
           <Collapse navbar>
             <Nav className="ml-auto" navbar>
               <NavItem>
-                <NavLink to="/menu" tag={Link}>
+                <NavLink to="#menu" tag={Link} onClick={handleScrollTo("menu")}>
                   Menu
                 </NavLink>
               </NavItem>
               <NavItem>
-                <NavLink to="/contact" tag={Link}>
+                <NavLink
+                  to="#contact"
+                  tag={Link}
+                  onClick={handleScrollTo("contact")}
+                >
                   Contact
                 </NavLink>
               </NavItem>
