@@ -8,5 +8,7 @@ git push origin master
 npm install
 npm run deploy
 
+https://heensrestaurant.uk/
+
 -- To Test or load up page locally
 npm start
