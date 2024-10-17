@@ -27,6 +27,6 @@
   "homepage": "https://github.com/ayrbox/heensrestaurant#readme",
   "devDependencies": {
     "gh-pages": "^2.0.1",
-    "live-server": "^1.2.1"
+    "live-server": "^1.2.2"
   }
 }
